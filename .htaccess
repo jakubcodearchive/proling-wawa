@@ -1,0 +1,7 @@
+RewriteEngine on
+
+# Przekierowanie domeny
+
+RewriteCond %{SERVER_PORT} !^443$ [OR]
+RewriteCond %{HTTP_HOST} !^symultaniczne\.pl$ [NC] 
+RewriteRule ^(.*)$ https://symultaniczne\.pl/$1 [R=301,L]
