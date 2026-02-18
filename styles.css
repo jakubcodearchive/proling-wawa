@@ -906,6 +906,96 @@ nav {
 }
 
 /* =========================================
+   TEAM SECTION – Modern (Mobile First)
+========================================= */
+
+#o_nas {
+  background-color: #ffffff;
+  padding: 100px 20px;
+}
+
+/* Grid */
+
+.team-grid {
+  max-width: 1100px;
+  margin: 60px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* Heading */ 
+
+#o_nas h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+/* Card */
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Description */
+
+.our-team {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* Image + Name */
+
+.image-and-name {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.head-picture {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.name-text {
+  font-weight: 600;
+  font-size: 16px;
+  color: #111;
+}
+
+/* =========================================
+   ≥ 900px – 3 Columns
+========================================= */
+
+@media (min-width: 900px) {
+  .team-grid {
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .team-card {
+    flex: 1;
+  }
+
+  .image-and-name {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .head-picture {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+
+/* =========================================
    MODERN SERVICE SECTION (Mobile First)
 ========================================= */
 
