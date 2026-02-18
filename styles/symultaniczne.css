@@ -435,6 +435,58 @@ nav {
   text-align: center; 
 }
 
+/* =========================================
+   SERVICE GRID – Mobile First
+========================================= */
+/* Two column projects grid */ 
+
+.service-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Image column */
+.image-column img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Text column */
+.text-column {
+  max-width: 65ch; /* improves readability */
+  margin: 0 auto;
+}
+
+.text-column .headline {
+  margin-top: 0;
+}
+
+/* =========================================
+   ≥ 800px – Two Column Layout
+========================================= */
+
+@media (min-width: 800px) {
+  .service-grid {
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .image-column,
+  .text-column {
+    flex: 1;
+  }
+
+  .text-column {
+    max-width: none;
+    margin: 0;
+  }
+}
+
+
 /* Customers */ 
 
 .clients {
@@ -644,9 +696,8 @@ color: red;
     margin-left: 10px; 
   }
 
-  /* Services */ 
+/* Services */ 
 
-/* services */
 .services {
   padding: 120px 0px 120px 0px; 
 
