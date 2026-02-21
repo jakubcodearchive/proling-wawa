@@ -381,6 +381,9 @@ nav {
   display: flex; 
   justify-content: space-evenly;
 }
+.separator-list {
+  margin: 20px;  
+}
 
 .quote, .separator-text {
   display: flex; 
