@@ -911,6 +911,56 @@ nav {
 /* =========================================
    TEAM SECTION – Modern (Mobile First)
 ========================================= */
+/* Team section */
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  justify-content: center;
+}
+
+.team-card {
+  flex: 1 1 250px;
+  max-width: 250px;
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.image-and-name {
+  display: flex;
+  gap: 1rem;
+}
+
+.head-picture {
+  border-radius: 50%;
+  width: 65px;
+  height: auto;
+  object-fit: cover;
+}
+
+.name-text {
+  font-style: italic;
+  color: #444;
+}
+
+.our-team {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+@media(min-width: 1200px) {
+  .team-card {
+    flex: 1 1 350px;
+    max-width: 400px;
+  }
+}
+
+/* ************************* */
+
 
 #o_nas {
   background-color: #ffffff;
